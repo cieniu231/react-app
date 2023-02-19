@@ -1,0 +1,21 @@
+.menuitem-container {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.menuitem {
+    color: black;
+    background-color: #61dafb;
+    padding: 8px;
+    margin: auto;
+    list-style-type: none;
+}
+
+.menuitem:hover {
+    background-color: #3acbf3;
+    cursor: pointer;
+}

@@ -1,16 +1,18 @@
 import React from 'react'
+import './navigation.css'
+import MenuItem from "./menuitem";
 class Menu extends React.Component {
     render(){
        return (
         <div>
-            <ul>
-                <li>Rotterdam</li>
-                <li>Haga</li>
-                <li>Amsterdam</li>
-                <li>Paryż</li>
-                <li>Bruksela</li>
-                <li>Antwerpia</li>
-                <li>Berlin</li>
+            <ul className={"menu-container"}>
+                <MenuItem name="Rotterdam"/>
+                <MenuItem name="Haga"/>
+                <MenuItem name="Amsterdam"/>
+                <MenuItem name="Dortmund"/>
+                <MenuItem name="Bruksela"/>
+                <MenuItem name="Antwerpia"/>
+                <MenuItem name="Paryż"/>
             </ul>
         </div>
         )

@@ -9,7 +9,7 @@ function Welcome(props) {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const element = <div><Welcome name="Kamil"/><Menu/></div>
+const element = <Menu/>
 root.render(element);
 
 // If you want to start measuring performance in your app, pass a function

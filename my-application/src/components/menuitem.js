@@ -2,14 +2,12 @@ import React from 'react'
 import './menuitem.css'
 
 class MenuItem extends React.Component {
-    handleClick = () => {
-        console.log('Dzień dobry');
-    }
 
     render() {
+
         return(
           <div className={"menuitem-container"}>
-              <li onClick={this.handleClick} className={"menuitem"}>
+              <li key={this.props.name} className={"menuitem"} onClick={this.props.handleClick.bind(this)}>
                      {this.props.name}
               </li>
           </div>

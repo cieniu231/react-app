@@ -1,20 +1,27 @@
 import React from "react";
 import './components/menuitem.css'
 import './App.css';
-function cityList(props) {
-    const cities = props.cities ;
-    const listItems = cities.map((city) =>
-    <div className={"menuitem-container"}>
-        <li className={"menuitem"}>
-            {city}
-        </li>
-    </div>
-);
-    return (
-        <ul className={"menu-container"}>{listItems}</ul>
-    );
-}
+import CityList from "./components/listitems";
+
+class App extends React.Component {
+
+    constructor(props) {
+        super(props);
+       // this.state = {
+         //   actualCityName: "Rotterdam"
+        //};
+
+    }
+    handleChange(){
+        console.log(this.props.name);
+    }
+    render(){
+        const cities = ["Rotterdam", "Haga", "Amsterdam"];
+        return(
+                <CityList handleChange={this.handleChange} items={cities}/>
+            )
+        }
+    }
 
 
-
-export default cityList();
+export default App;

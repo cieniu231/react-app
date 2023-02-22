@@ -15,16 +15,18 @@ class City extends React.Component {
             <div className={"city-description"}>
                 <article>
                     {this.props.name}
-                    <p>Miejsce na opis</p>
-                    <div className="stock-container">
+                    <div>
                         {citiesData.map((data, key) => {
                             if(data.name === this.props.name) {
                                 return (
-                                    <div key={key}>
-                                        {data.description +
-                                            " , " +
-                                            data.when
-                                        }
+                                    <div>
+                                    <div className="description-container" key={key}>
+                                        <p>{data.description}</p>
+                                    </div>
+                                    <div className="when-container">
+                                        {data.when}
+
+                                    </div>
                                     </div>
                                 );
                             }
@@ -35,7 +37,6 @@ class City extends React.Component {
             </div>
             <div className={"city-to-do"}>
                 {this.props.name}
-                <p>Miejscena formularz</p>
                 {citiesData.map((data, key) => {
                     if(data.name === this.props.name) {
                         return (

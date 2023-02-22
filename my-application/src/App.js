@@ -1,8 +1,9 @@
-import React from "react";
+import React from "react"
 import './components/menuitem.css'
-import './App.css';
-import CityList from "./components/listitems";
+import './App.css'
+import CityList from './components/listitems'
 import City from './components/city'
+
 
 class App extends React.Component {
 
